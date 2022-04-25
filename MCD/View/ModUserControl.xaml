@@ -1,0 +1,39 @@
+﻿<UserControl x:Class="MCD.View.ModUserControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:MCD.View"
+             xmlns:viewmodel="clr-namespace:MCD.ViewModel" 
+             d:DataContext="{d:DesignInstance Type=viewmodel:ModuloViewModel}"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <UserControl.DataContext>
+        <viewmodel:ModuloViewModel/>
+    </UserControl.DataContext>
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="auto"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Border CornerRadius="10" BorderThickness="5" BorderBrush="LightGray">
+            <DockPanel>
+                <StackPanel DockPanel.Dock="Top">
+                    <Label Content="Calcular el mod de un numero" />
+                    <Grid Margin="5">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition/>
+                            <ColumnDefinition/>
+                            <ColumnDefinition/>
+                        </Grid.ColumnDefinitions>
+                        <Label Content="Mod"  Grid.Column="1" Width="100" Height="50"  FontWeight="Bold" FontSize="25"/>
+                        <TextBox  Grid.Column="0" Height="50" Width="100"  FontSize="20" FontWeight="ExtraBold" HorizontalContentAlignment="Center" Text="{Binding Valor}"/>
+                        <TextBox  Grid.Column="2" Height="50" Width="100"  FontSize="20" FontWeight="ExtraBold" HorizontalContentAlignment="Center" Text="{Binding ModValue}"/>
+                    </Grid>
+                    <TextBox IsReadOnly="True" VerticalContentAlignment="Center" HorizontalContentAlignment="Center" FontSize="20" FontWeight="ExtraBold"  Height="50" Width="300" Text="{Binding ModuleResult}"/>
+                    <Button  Content="Calcular"  Width="300"  Margin="5" Command="{Binding ModCommand}"/>
+                </StackPanel>
+            </DockPanel>
+        </Border>
+    </Grid>
+</UserControl>

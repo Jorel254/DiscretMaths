@@ -1,0 +1,40 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Image\E.png" />
+    <None Remove="Image\G.png" />
+    <None Remove="Image\K.png" />
+    <None Remove="Image\L.png" />
+    <None Remove="Image\percentage.png" />
+    <None Remove="Image\Z.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Image\E.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Image\G.png" />
+    <Resource Include="Image\K.png" />
+    <Resource Include="Image\L.png" />
+    <Resource Include="Image\percentage.png" />
+    <Resource Include="Image\Z.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MaterialDesignThemes" Version="4.4.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\Git\DiscreteMaths\UI\UI.csproj" />
+    <ProjectReference Include="..\..\..\..\Git\GoldenToolKit\GoldenToolKit\GoldenToolKit.csproj" />
+  </ItemGroup>
+
+</Project>
