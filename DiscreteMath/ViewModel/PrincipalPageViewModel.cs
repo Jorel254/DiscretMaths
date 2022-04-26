@@ -1,14 +1,9 @@
-﻿using GoldenToolKit;
-using MCD.View;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using DiscreteMath.View;
+using GoldenToolKit;
 using System.Windows.Input;
 using UI.Views;
 
-namespace MCD.ViewModel
+namespace DiscreteMath.ViewModel
 {
     public class PrincipalPageViewModel : ModelBase
     {

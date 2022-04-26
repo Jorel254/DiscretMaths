@@ -1,12 +1,7 @@
 ﻿using GoldenToolKit;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Input;
 
-namespace MCD.ViewModel
+namespace DiscreteMath.ViewModel
 {
 
     internal class ModuloViewModel : ModelBase
@@ -20,7 +15,7 @@ namespace MCD.ViewModel
             get => valor;
             set
             {
-                valor=value;
+                valor = value;
                 OnPropertyChanged();
             }
         }
@@ -29,7 +24,7 @@ namespace MCD.ViewModel
             get => modValue;
             set
             {
-                modValue=value;
+                modValue = value;
                 OnPropertyChanged();
             }
         }
@@ -38,7 +33,7 @@ namespace MCD.ViewModel
             get => moduleResult;
             set
             {
-                moduleResult=value;
+                moduleResult = value;
                 OnPropertyChanged();
             }
         }
@@ -54,7 +49,7 @@ namespace MCD.ViewModel
         {
             if (ModValue == 0)
             {
-                ModuleResult="NaN";
+                ModuleResult = "NaN";
             }
             else
             {
@@ -64,5 +59,5 @@ namespace MCD.ViewModel
             }
         }
     }
-    
+
 }

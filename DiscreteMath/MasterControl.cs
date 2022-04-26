@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Windows.Controls;
 
-namespace MCD
+namespace DiscreteMath
 {
     public class MasterControl : ContentControl, INavigationPage
     {
@@ -29,8 +29,8 @@ namespace MCD
                     Actual = ControlInterfaces.Values.ElementAt(0);
                     ControlInterfaces.Clear();
                 }
-                    //Actual = ControlInterfaces.Values.ElementAt(ActualPage - 1);
-                    //ActualPage -= 1;
+                //Actual = ControlInterfaces.Values.ElementAt(ActualPage - 1);
+                //ActualPage -= 1;
                 return Actual;
 
             }

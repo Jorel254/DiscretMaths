@@ -1,22 +1,17 @@
 ﻿using GoldenToolKit;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Input;
 
-namespace MCD.ViewModel
+namespace DiscreteMath.ViewModel
 {
-    public class GCDViewModel: ModelBase
+    public class GCDViewModel : ModelBase
     {
         private int _a;
 
         public int a
         {
-            get => _a; 
+            get => _a;
             set
-            { 
+            {
                 _a = value;
                 OnPropertyChanged();
             }
@@ -25,9 +20,9 @@ namespace MCD.ViewModel
 
         public int b
         {
-            get => _b; 
-            set 
-            { 
+            get => _b;
+            set
+            {
                 _b = value;
                 OnPropertyChanged();
             }
@@ -37,8 +32,8 @@ namespace MCD.ViewModel
         public int q
         {
             get => _q;
-            set 
-            { 
+            set
+            {
                 _q = value;
             }
         }
@@ -47,7 +42,7 @@ namespace MCD.ViewModel
         public int r
         {
             get => _r;
-            set 
+            set
             {
                 _r = value;
             }
@@ -56,9 +51,9 @@ namespace MCD.ViewModel
 
         public int ResulGCD
         {
-            get => _ResulGCD; 
+            get => _ResulGCD;
             set
-            { 
+            {
                 _ResulGCD = value;
                 OnPropertyChanged();
             }
@@ -69,26 +64,26 @@ namespace MCD.ViewModel
         {
             GCDCommand = new Command(CalculateGCD);
         }
-        public void CalculateGCD(object obj) 
+        public void CalculateGCD(object obj)
         {
             var r2 = 0;
             int aux = 0;
             if (b > a)
             {
                 int temp = a;
-                a= b;
-                b= temp;
+                a = b;
+                b = temp;
             }
-            q = a/b;
+            q = a / b;
             r = ModClass.ManualMod(a, b);
-            r2=r;
+            r2 = r;
             if (r == 0)
             {
-                ResulGCD= b;
+                ResulGCD = b;
             }
             else
             {
-                q = b/r;
+                q = b / r;
                 r = ModClass.ManualMod(b, r);
                 while (r != 0)
                 {
@@ -96,7 +91,7 @@ namespace MCD.ViewModel
                     r2 = r;
                     r = aux;
                 }
-                ResulGCD= r2;
+                ResulGCD = r2;
             }
             //if (b > a)
             //{

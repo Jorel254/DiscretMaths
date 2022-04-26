@@ -33,8 +33,10 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\..\..\Git\DiscreteMaths\UI\UI.csproj" />
-    <ProjectReference Include="..\..\..\..\Git\GoldenToolKit\GoldenToolKit\GoldenToolKit.csproj" />
+    <ProjectReference Include="..\..\DiscreteMath\Math\Math.csproj" />
+    <ProjectReference Include="..\..\DiscreteMath\UI\UI.csproj" />
+    <ProjectReference Include="..\..\GoldenToolKit\GoldenToolKit\GoldenToolKit.csproj" />
+    <ProjectReference Include="..\..\Kit\Kit.WPF\Kit.WPF.csproj" />
   </ItemGroup>
 
 </Project>
