@@ -71,8 +71,8 @@ namespace MCD.ViewModel
         }
         public void CalculateGCD(object obj) 
         {
-            var r2 = 0;
-            int aux = 0;
+            int r2;
+            int aux ;
             if (b > a)
             {
                 int temp = a;

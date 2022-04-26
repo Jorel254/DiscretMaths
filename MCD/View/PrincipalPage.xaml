@@ -33,11 +33,11 @@
             </StackPanel>
             <StackPanel Grid.Column="1" Margin="4">
                 <Image Source="/Image/Z.png" Margin="10" Width="80"/>
-                <Button  Content="Inverso multiplicativo" FontSize="20" Height="50" Width="230" FontWeight="Bold" Command="{Binding ZCommand}" />
+                <Button  Content="Inverso multiplicativo" FontSize="18" Height="50" Width="230" FontWeight="Bold" Command="{Binding ZCommand}" />
             </StackPanel>
             <StackPanel Grid.Column="2" Margin="4">
                 <Image Source="/Image/K.png" Margin="10" Width="80"/>
-                <Button  Content="Calcular divisores de K" FontSize="20" Height="50" Width="230" FontWeight="Bold" Command="{Binding KCommand}"/>
+                <Button  Content="Calcular divisores de K" FontSize="18" Height="50" Width="230" FontWeight="Bold" Command="{Binding KCommand}"/>
             </StackPanel>
             <StackPanel Grid.Column="0" Grid.Row="1" Margin="4">
                 <Image Source="/Image/G.png" Margin="10" Width="80"/>
@@ -45,7 +45,7 @@
             </StackPanel>
             <StackPanel Grid.Column="1" Grid.Row="1" Margin="4">
                 <Image Source="/Image/E.png" Margin="10" Width="80"/>
-                <Button  Content="Algorítmo extendido de Euclides" FontSize="13" Height="50" Width="230" FontWeight="UltraBold" Command="{Binding EuclidesCommand}"/>
+                <Button  Content="Algorítmo extendido de Euclides" FontSize="12" Height="50" Width="230" FontWeight="UltraBold" Command="{Binding EuclidesCommand}"/>
             </StackPanel>
             <StackPanel Grid.Column="2" Grid.Row="1" Margin="4">
                 <Image Source="/Image/L.png" Margin="10" Width="80"/>
