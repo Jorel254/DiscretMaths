@@ -1,25 +1,21 @@
 ﻿using GoldenToolKit;
-using System;
 using System.Collections.Generic;
 using System.Data;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Input;
 
-namespace MCD.ViewModel
+namespace DiscreteMath.ViewModel
 {
-    public class MultiplicativeInverseZViewModel: ModelBase
+    public class MultiplicativeInverseZViewModel : ModelBase
     {
         private int _ZValue;
 
         public int ZValue
         {
-            get 
-            { 
+            get
+            {
                 return _ZValue;
             }
-            set 
+            set
             {
                 _ZValue = value;
                 OnPropertyChanged();
@@ -48,7 +44,7 @@ namespace MCD.ViewModel
             columns.Clear();
             columnValues.Clear();
             columns.Add(new DataColumn("#", typeof(double)));
-            for (int i = 0; i <= ZValue-1; i++)
+            for (int i = 0; i <= ZValue - 1; i++)
             {
                 string NameColum = i.ToString();
                 columns.Add(new DataColumn(NameColum, typeof(double)));
@@ -57,13 +53,13 @@ namespace MCD.ViewModel
             {
                 dT.Columns.Add(column);
             }
-            for (int i = 0; i <= columns.Count-2; i++)
+            for (int i = 0; i <= columns.Count - 2; i++)
             {
                 DataRow row = dT.NewRow();
-                for (int j = 0; j <=columns.Count-1; j++)
+                for (int j = 0; j <= columns.Count - 1; j++)
                 {
-                    
-                    int RowValue= i * j;
+
+                    int RowValue = i * j;
                     if (RowValue == 1)
                     {
                         columnValues.Add(i.ToString(), j.ToString());
@@ -71,35 +67,35 @@ namespace MCD.ViewModel
                     if (RowValue > (columns.Count - 1))
                     {
                         int temp = RowValue;
-                        RowValue= ModClass.ManualMod(RowValue, columns.Count-1);                       
+                        RowValue = ModClass.ManualMod(RowValue, columns.Count - 1);
                         if (RowValue == 1)
                         {
-                            columnValues.Add(i.ToString(),j.ToString());
+                            columnValues.Add(i.ToString(), j.ToString());
                         }
                     }
                     if (j == 0)
                     {
-                        row[j]=i;
-                        row[j+1] = RowValue;
+                        row[j] = i;
+                        row[j + 1] = RowValue;
                     }
                     else
                     {
                         var aux = j + 1;
-                        if (aux <= (columns.Count-1))
+                        if (aux <= (columns.Count - 1))
                         {
                             row[aux] = RowValue;
                         }
-                        
+
                     }
-                    
-                   
+
+
                 }
                 dT.Rows.Add(row);
                 if (!columnValues.ContainsKey(i.ToString()))
                 {
                     columnValues.Add(i.ToString(), "----");
                 }
-                
+
             }
             return dT.DefaultView;
         }
@@ -116,19 +112,19 @@ namespace MCD.ViewModel
             {
                 dTIn.Columns.Add(column);
             }
-            for (int i = 0; i <= ZValue-1; i++)
+            for (int i = 0; i <= ZValue - 1; i++)
             {
                 DataRow row = dTIn.NewRow();
-                    foreach (string keyVar in columnValues.Keys) 
-                    { 
-                        if (keyVar == i.ToString())
-                        {
-                            row[0]= keyVar;
-                            row[1]=columnValues[i.ToString()];
-                            break;
-                        }
-                        
+                foreach (string keyVar in columnValues.Keys)
+                {
+                    if (keyVar == i.ToString())
+                    {
+                        row[0] = keyVar;
+                        row[1] = columnValues[i.ToString()];
+                        break;
                     }
+
+                }
                 dTIn.Rows.Add(row);
             }
             return dTIn.DefaultView;

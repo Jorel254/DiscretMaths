@@ -1,12 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Configuration;
-using System.Data;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using Kit.WPF;
 using System.Windows;
 
-namespace MCD
+namespace DiscreteMath
 {
     /// <summary>
     /// Interaction logic for App.xaml
@@ -17,6 +12,7 @@ namespace MCD
         protected override async void OnStartup(StartupEventArgs e)
         {
             base.OnStartup(e);
+            Tools.Init();
         }
     }
 }

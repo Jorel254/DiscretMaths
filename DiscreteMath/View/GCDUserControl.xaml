@@ -1,14 +1,14 @@
-﻿<UserControl x:Class="MCD.View.GCDUserControl"
+﻿<UserControl x:Class="DiscreteMath.View.GCDUserControl"
              xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
-             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
-             xmlns:local="clr-namespace:MCD.View" xmlns:viewmodel="clr-namespace:MCD.ViewModel"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:viewModel="clr-namespace:DiscreteMath.ViewModel"
              d:DataContext="{d:DesignInstance Type=viewmodel:GCDViewModel}"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
     <UserControl.DataContext>
-        <viewmodel:GCDViewModel/>
+        <viewModel:GCDViewModel/>
     </UserControl.DataContext>
     <Grid>
         <Border HorizontalAlignment="Center" CornerRadius="10" BorderThickness="5" BorderBrush="LightGray">
