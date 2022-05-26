@@ -7,7 +7,7 @@
              xmlns:viewmodel="clr-namespace:MCD.ViewModel"
              mc:Ignorable="d" 
                d:DataContext="{d:DesignInstance Type=viewmodel:PrincipalPageViewModel}"
-             d:DesignHeight="450" d:DesignWidth="800">
+             d:DesignHeight="500" d:DesignWidth="800">
     <UserControl.DataContext>
         <viewmodel:PrincipalPageViewModel/>
     </UserControl.DataContext>
@@ -26,32 +26,36 @@
             <Grid.RowDefinitions>
                 <RowDefinition/>
                 <RowDefinition/>
+                <RowDefinition/>
             </Grid.RowDefinitions>
-            <StackPanel Grid.Column="0" Margin="4">
-                <Image Source="/Image/percentage.png" Margin="10" Width="80"/>
-                <Button  Content="Calcular Modulo" FontSize="20" Height="50" Width="230" FontWeight="Bold" Command="{Binding ModuleCommand}"/>
+            <StackPanel Grid.Column="0" Grid.Row="0" Margin="4">
+                <Image Source="/Image/percentage.png" Margin="10" Width="60"/>
+                <Button  Content="Calcular Modulo" FontSize="20" Height="35" Width="230" FontWeight="Bold" Command="{Binding ModuleCommand}"/>
             </StackPanel>
-            <StackPanel Grid.Column="1" Margin="4">
-                <Image Source="/Image/Z.png" Margin="10" Width="80"/>
-                <Button  Content="Inverso multiplicativo" FontSize="18" Height="50" Width="230" FontWeight="Bold" Command="{Binding ZCommand}" />
+            <StackPanel Grid.Column="1" Grid.Row="0"  Margin="4">
+                <Image Source="/Image/Z.png" Margin="10" Width="60"/>
+                <Button  Content="Inverso multiplicativo" FontSize="18" Height="35" Width="230" FontWeight="Bold" Command="{Binding ZCommand}" />
             </StackPanel>
-            <StackPanel Grid.Column="2" Margin="4">
-                <Image Source="/Image/K.png" Margin="10" Width="80"/>
-                <Button  Content="Calcular divisores de K" FontSize="18" Height="50" Width="230" FontWeight="Bold" Command="{Binding KCommand}"/>
+            <StackPanel Grid.Column="2"  Margin="4">
+                <Image Source="/Image/K.png" Margin="10" Width="60"/>
+                <Button  Content="Calcular divisores de K" FontSize="18" Height="35" Width="230" FontWeight="Bold" Command="{Binding KCommand}"/>
             </StackPanel>
             <StackPanel Grid.Column="0" Grid.Row="1" Margin="4">
-                <Image Source="/Image/G.png" Margin="10" Width="80"/>
-                <Button  Content="Calcular GCD" FontSize="20" Height="50" Width="230" FontWeight="Bold" Command="{Binding GCommand}"/>
+                <Image Source="/Image/G.png" Margin="10" Width="60"/>
+                <Button  Content="Calcular GCD" FontSize="20" Height="35" Width="230" FontWeight="Bold" Command="{Binding GCommand}"/>
             </StackPanel>
             <StackPanel Grid.Column="1" Grid.Row="1" Margin="4">
-                <Image Source="/Image/E.png" Margin="10" Width="80"/>
-                <Button  Content="Algorítmo extendido de Euclides" FontSize="12" Height="50" Width="230" FontWeight="UltraBold" Command="{Binding EuclidesCommand}"/>
+                <Image Source="/Image/E.png" Margin="10" Width="60"/>
+                <Button  Content="Algorítmo extendido de Euclides" FontSize="12" Height="35" Width="230" FontWeight="UltraBold" Command="{Binding EuclidesCommand}"/>
             </StackPanel>
             <StackPanel Grid.Column="2" Grid.Row="1" Margin="4">
-                <Image Source="/Image/L.png" Margin="10" Width="80"/>
-                <Button  Content="Ecuaciones Lineales" FontSize="20" Height="50" Width="230" FontWeight="Bold" Command="{Binding EquationCommand}"/>
+                <Image Source="/Image/L.png" Margin="10" Width="60"/>
+                <Button  Content="Ecuaciones Lineales" FontSize="20" Height="35" Width="230" FontWeight="Bold" Command="{Binding EquationCommand}"/>
             </StackPanel>
-            
+            <StackPanel Grid.Column="0" Grid.Row="2" Margin="4">
+                <Image Source="/Image/L.png" Margin="10" Width="60"/>
+                <Button  Content="Ecuaciones Lineales" FontSize="20" Height="35" Width="230" FontWeight="Bold" Command="{Binding EuclidesPolinomianCommand}"/>
+            </StackPanel>
         </Grid>
     </Grid>
 </UserControl>

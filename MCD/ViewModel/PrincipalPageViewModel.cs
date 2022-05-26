@@ -18,6 +18,7 @@ namespace MCD.ViewModel
         public ICommand GCommand { get; set; }
         public ICommand EuclidesCommand { get; set; }
         public ICommand EquationCommand { get; set; }
+        public ICommand EuclidesPolinomianCommand { get; set; }
         public PrincipalPageViewModel()
         {
             ModuleCommand = new Command(ModulePage);
@@ -26,7 +27,10 @@ namespace MCD.ViewModel
             GCommand = new Command(GPage);
             EuclidesCommand = new Command(EuclidesPage);
             EquationCommand = new Command(EquationPage);
+            EuclidesPolinomianCommand = new Command(EuclidesPPage);
         }
+
+        private void EuclidesPPage(object obj) => MasterControl.Current.Navegar<EuclidesPolinomiosUserControl>();
 
         private void GPage(object obj) => MasterControl.Current.Navegar<GCDUserControl>();
 
