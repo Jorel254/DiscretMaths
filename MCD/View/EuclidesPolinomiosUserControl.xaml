@@ -61,61 +61,61 @@
                 </Grid.RowDefinitions>
                 <StackPanel Orientation="Horizontal">
                     <Label Content="G(x)" VerticalContentAlignment="Center"/>
-                    <Border  CornerRadius="5" BorderThickness="2" BorderBrush="LightGray" Width="200"  Height="50">
-                        <Label Content="{Binding gx}"  VerticalAlignment="Center" VerticalContentAlignment="Center"/>
+                    <Border  CornerRadius="5" BorderThickness="2" BorderBrush="LightGray" Width="240"  Height="50">
+                        <Label Content="{Binding gx}"  VerticalAlignment="Center" VerticalContentAlignment="Center" />
                     </Border>
                 </StackPanel>
                 <StackPanel Orientation="Horizontal" Grid.Column="1">
                     <Label Content="H(x)" VerticalContentAlignment="Center"/>
-                    <Border  CornerRadius="5" BorderThickness="2" BorderBrush="LightGray" Width="200"  Height="50">
+                    <Border  CornerRadius="5" BorderThickness="2" BorderBrush="LightGray" Width="230"  Height="50">
                         <Label Content="{Binding hx}"  VerticalAlignment="Center" VerticalContentAlignment="Center"/>
                     </Border>
                 </StackPanel>
                 <StackPanel Orientation="Horizontal" Grid.Column="0" Grid.Row="1">
                     <Label Content="Q(x)" VerticalContentAlignment="Center"/>
-                    <Border  CornerRadius="5" BorderThickness="2" BorderBrush="LightGray" Width="200"  Height="50">
+                    <Border  CornerRadius="5" BorderThickness="2" BorderBrush="LightGray" Width="240"  Height="50">
                         <Label Content="{Binding q}"  VerticalAlignment="Center" VerticalContentAlignment="Center"/>
                     </Border>
                 </StackPanel>
                 <StackPanel Orientation="Horizontal" Grid.Column="1" Grid.Row="1">
                     <Label Content="R(x)" VerticalContentAlignment="Center"/>
-                    <Border  CornerRadius="5" BorderThickness="2" BorderBrush="LightGray" Width="200"  Height="50">
+                    <Border  CornerRadius="5" BorderThickness="2" BorderBrush="LightGray" Width="230"  Height="50">
                         <Label Content="{Binding r}"  VerticalAlignment="Center" VerticalContentAlignment="Center"/>
                     </Border>
                 </StackPanel>
                 <StackPanel Orientation="Horizontal" Grid.Column="0" Grid.Row="2">
                     <Label Content="T(x)" VerticalContentAlignment="Center"/>
-                    <Border  CornerRadius="5" BorderThickness="2" BorderBrush="LightGray" Width="200"  Height="50">
+                    <Border  CornerRadius="5" BorderThickness="2" BorderBrush="LightGray" Width="240"  Height="50">
                         <Label Content="{Binding t}"  VerticalAlignment="Center" VerticalContentAlignment="Center"/>
                     </Border>
                 </StackPanel>
                 <StackPanel Orientation="Horizontal" Grid.Column="1" Grid.Row="2">
                     <Label Content="S(x)"  VerticalContentAlignment="Center"/>
-                    <Border  CornerRadius="5" BorderThickness="2" BorderBrush="LightGray" Width="200"  Height="50">
+                    <Border  CornerRadius="5" BorderThickness="2" BorderBrush="LightGray" Width="230"  Height="50">
                         <Label Content="{Binding s}"  VerticalAlignment="Center" VerticalContentAlignment="Center"/>
                     </Border>
                 </StackPanel>
                 <StackPanel Orientation="Horizontal" Grid.Column="0" Grid.Row="3">
                     <Label Content="t1" VerticalContentAlignment="Center"/>
-                    <Border  CornerRadius="5" BorderThickness="2" BorderBrush="LightGray" Width="200"  Height="50">
+                    <Border  CornerRadius="5" BorderThickness="2" BorderBrush="LightGray" Width="250"  Height="50">
                         <Label Content="{Binding t1}"  VerticalAlignment="Center" VerticalContentAlignment="Center"/>
                     </Border>
                 </StackPanel>
                 <StackPanel Orientation="Horizontal" Grid.Column="1" Grid.Row="3">
                     <Label Content="s1" VerticalContentAlignment="Center"/>
-                    <Border  CornerRadius="5" BorderThickness="2" BorderBrush="LightGray" Width="200"  Height="50">
+                    <Border  CornerRadius="5" BorderThickness="2" BorderBrush="LightGray" Width="240"  Height="50">
                         <Label Content="{Binding s1}"  VerticalAlignment="Center" VerticalContentAlignment="Center"/>
                     </Border>
                 </StackPanel>
                 <StackPanel Orientation="Horizontal" Grid.Column="0" Grid.Row="4">
                     <Label Content="t2" VerticalContentAlignment="Center"/>
-                    <Border  CornerRadius="5" BorderThickness="2" BorderBrush="LightGray" Width="200"  Height="50">
+                    <Border  CornerRadius="5" BorderThickness="2" BorderBrush="LightGray" Width="240"  Height="50">
                         <Label Content="{Binding t2}"  VerticalAlignment="Center" VerticalContentAlignment="Center"/>
                     </Border>
                 </StackPanel>
                 <StackPanel Orientation="Horizontal" Grid.Column="1" Grid.Row="4">
                     <Label Content="s2" VerticalContentAlignment="Center"/>
-                    <Border  CornerRadius="5" BorderThickness="2" BorderBrush="LightGray" Width="200"  Height="50">
+                    <Border  CornerRadius="5" BorderThickness="2" BorderBrush="LightGray" Width="240"  Height="50">
                         <Label Content="{Binding s2}"  VerticalAlignment="Center" VerticalContentAlignment="Center"/>
                     </Border>
                 </StackPanel>

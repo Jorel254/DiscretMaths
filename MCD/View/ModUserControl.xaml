@@ -12,11 +12,7 @@
         <viewmodel:ModuloViewModel/>
     </UserControl.DataContext>
     <Grid>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="auto"/>
-            <ColumnDefinition Width="*"/>
-        </Grid.ColumnDefinitions>
-        <Border CornerRadius="10" BorderThickness="5" BorderBrush="LightGray">
+        <Border HorizontalAlignment="Center" CornerRadius="10" BorderThickness="5" BorderBrush="LightGray">
             <DockPanel>
                 <StackPanel DockPanel.Dock="Top">
                     <Label Content="Calcular el mod de un numero" />

@@ -53,8 +53,8 @@
                 <Button  Content="Ecuaciones Lineales" FontSize="20" Height="35" Width="230" FontWeight="Bold" Command="{Binding EquationCommand}"/>
             </StackPanel>
             <StackPanel Grid.Column="0" Grid.Row="2" Margin="4">
-                <Image Source="/Image/L.png" Margin="10" Width="60"/>
-                <Button  Content="Ecuaciones Lineales" FontSize="20" Height="35" Width="230" FontWeight="Bold" Command="{Binding EuclidesPolinomianCommand}"/>
+                <Image Source="/Image/E.png" Margin="10" Width="60"/>
+                <Button  Content="Ex Euclides para polinomios" FontSize="15" Height="35" Width="230" FontWeight="Bold" Command="{Binding EuclidesPolinomianCommand}"/>
             </StackPanel>
         </Grid>
     </Grid>
